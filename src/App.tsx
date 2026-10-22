@@ -76,8 +76,8 @@ export default function App() {
                   flexShrink: 0,
                 }}
               >
-                <div style={{ flex: 1, backgroundColor: '#FFFFFF' }}></div>
                 <div style={{ flex: 1, backgroundColor: '#DC2626' }}></div>
+                <div style={{ flex: 1, backgroundColor: '#FFFFFF' }}></div>
               </div>
               <span>{selectedLang.toUpperCase()}</span>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -105,8 +105,8 @@ export default function App() {
                       flexDirection: 'column',
                     }}
                   >
-                    <div style={{ flex: 1, backgroundColor: '#FFFFFF' }}></div>
                     <div style={{ flex: 1, backgroundColor: '#DC2626' }}></div>
+                    <div style={{ flex: 1, backgroundColor: '#FFFFFF' }}></div>
                   </div>
                   <span>Indonesia</span>
                 </button>
