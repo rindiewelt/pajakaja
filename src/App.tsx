@@ -327,9 +327,9 @@ export default function App() {
           </section>
         </main>
 
-        {/* FOOTER (Bug 5: Typo kata 'Palak' dan 'tidak dilindungi') */}
+        {/* FOOTER */}
         <footer className="portal-footer">
-          <p>&copy; 2026 Direktorat Jenderal Palak. Seluruh hak cipta tidak dilindungi.</p>
+          <p>&copy; 2026 Direktorat Jenderal Pajak. Seluruh hak cipta tidak dilindungi.</p>
         </footer>
       </div>
     </>
