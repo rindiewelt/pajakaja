@@ -1,0 +1,85 @@
+:root {
+  --primary-navy: #15274d;
+  --primary-navy-dark: #0f1c38;
+  --primary-navy-hover: #1b3263;
+  --accent-gold: #f59e0b;
+  --accent-orange: #ea580c;
+  --bg-page: #f5f7fb;
+  --bg-card: #ffffff;
+  --text-primary: #101828;
+  --text-secondary: #475467;
+  --text-muted: #667085;
+  --border-light: rgba(226, 232, 240, 0.85);
+  
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Background ambient dynamic 3D ribbons/waves */
+.bg-ambient-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.blob-1 {
+  position: absolute;
+  top: -15%;
+  right: -5%;
+  width: 65vw;
+  height: 65vw;
+  max-width: 900px;
+  max-height: 900px;
+  background: radial-gradient(circle, rgba(235, 241, 252, 0.95) 0%, rgba(224, 234, 250, 0.6) 40%, rgba(245, 247, 251, 0) 75%);
+  border-radius: 50%;
+  filter: blur(40px);
+}
+
+.blob-2 {
+  position: absolute;
+  bottom: -20%;
+  left: -10%;
+  width: 55vw;
+  height: 55vw;
+  background: radial-gradient(circle, rgba(240, 244, 253, 0.8) 0%, rgba(228, 237, 251, 0.4) 50%, rgba(245, 247, 251, 0) 75%);
+  border-radius: 50%;
+  filter: blur(50px);
+}
+
+.blob-wave {
+  position: absolute;
+  right: 0;
+  top: 15%;
+  width: 45vw;
+  height: 70vh;
+  background: radial-gradient(ellipse at 80% 50%, rgba(220, 231, 250, 0.45) 0%, rgba(235, 242, 253, 0.2) 50%, transparent 80%);
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  filter: blur(35px);
+  transform: rotate(-15deg);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
